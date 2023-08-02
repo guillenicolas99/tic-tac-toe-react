@@ -1,0 +1,83 @@
+main{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.table {
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  color: #f2f2f2;
+  display: grid;
+  place-items: center;
+}
+
+.turn-sec {
+  display: grid;
+  place-items: center;
+}
+
+.turn-sec .square {
+  width: max-content;
+  padding: 10px 30px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: #f3f3f3;
+  border: 2px solid transparent;
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.modal-winner {
+  position: fixed;
+  inset: 0;
+  max-width: 300px;
+  max-height: 400px;
+  background-color: #111;
+  padding: 25px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.modal-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal-container .winner-title{
+  margin-bottom: 15px;
+}
+
+.modal-container .square{
+  margin: 0 auto;
+}
